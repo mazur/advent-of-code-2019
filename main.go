@@ -11,6 +11,7 @@ type DayFunc func() string
 func main() {
 	days := []DayFunc{
 		Day01,
+		Day02,
 	}
 
 	if len(os.Args) == 1 {

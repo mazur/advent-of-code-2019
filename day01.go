@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func FuelCalculator(mass int) int {
   fuel := (mass / 3) - 2
 
@@ -18,7 +20,7 @@ func CalculateSumOfFuel(masses []int) int {
   return sum
 }
 
-func Day01() int {
+func Day01() string {
   inputs := []int{
     64010,
     104993,
@@ -122,5 +124,5 @@ func Day01() int {
     79899,
   }
 
-  return CalculateSumOfFuel(inputs)
+  return fmt.Sprintf("%d", CalculateSumOfFuel(inputs))
 }

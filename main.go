@@ -12,6 +12,7 @@ func main() {
 	days := []DayFunc{
 		Day01,
 		Day02,
+		Day03,
 	}
 
 	if len(os.Args) == 1 {
